@@ -1,0 +1,121 @@
+@font-face {
+    font-family: poppinsr;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: poppinsb;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+:root {
+    --firstcolor:#FF6A3D;
+    --secondcolor: #9DAAF2;
+    --thirdcolor:#1A2238;
+    --textcolorblack: #1A2238;
+    --black:black;
+    --white: #F8F8FB;
+    --marginleft: 0 4vw 0 4vw;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: var(--white);
+    font-size: 62.5%;
+    font-family: poppinsr,Arial, Helvetica, sans-serif;
+}
+header{
+    min-height: 60vh;
+    padding: 0 0 0 5rem;
+}
+a{
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+h1{
+    font-size: 6rem;
+    color: var(--firstcolor);
+    font-family: poppinsb;
+}
+h2{
+    font-size: 4rem;
+    color: var(--secondcolor);
+    font-family: poppinsb;
+}
+h3{
+    font-size: 2.4rem;
+    color: var(--textcolorblack);
+}
+p{
+    font-size: 1.6rem;
+    color: var(--textcolorblack);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+nav ul li {
+    padding:3rem;
+    list-style: none;
+}
+nav a {
+    color: var(--secondcolor);
+}
+.headercontent{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.headertxt{
+    max-width: 50vw;
+}
+.headerimg{
+    max-width: 25vw;
+    min-height: 44vh;
+}
+.ueber-mich
+{
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 60vh;
+}
+.uebermichtxt{
+    max-width: 50vw;
+}
+
+.techstack{
+    padding:20rem;
+    background-color: var(--thirdcolor);
+
+}
+.techstack h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+}
+.skills{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:4rem;
+}
+.skillcontainer{
+    background-color: var(--white);
+    padding:7rem;
+    text-align: center;
+    
+}
+.skillcontainer img{
+    max-width: 8vw;
+    max-height: 8vh;
+}

@@ -8,12 +8,12 @@
 }
 
 :root {
-    --firstcolor:#FF6A3D;
-    --secondcolor: #9DAAF2;
-    --thirdcolor:#1A2238;
-    --textcolorblack: #1A2238;
-    --black:black;
-    --white: #F8F8FB;
+    --firstcolor:#31473A;
+    --secondcolor: #7C8363;
+    --thirdcolor:#7C8363;
+    --textcolorblack: #31473A;
+    --black:#31473A;
+    --white: #EDF4F2;
     --marginleft: 0 4vw 0 4vw;
 }
 
@@ -37,28 +37,39 @@ a{
     font-size: 1.6rem;
 }
 
+
+
 h1{
     font-size: 6rem;
     color: var(--firstcolor);
     font-family: poppinsb;
+    margin-bottom: 1.5rem;
 }
 h2{
     font-size: 4rem;
     color: var(--secondcolor);
     font-family: poppinsb;
+    margin-bottom: 1.5rem;
 }
 h3{
     font-size: 2.4rem;
     color: var(--textcolorblack);
+    margin-bottom: 1.5rem;
 }
 p{
     font-size: 1.6rem;
     color: var(--textcolorblack);
+    margin-bottom: 1.5rem;
+}
+section{
+    margin: 10rem 0;
 }
 nav ul{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
+    align-items: center;
+    
 }
 nav ul li {
     padding:3rem;
@@ -81,7 +92,6 @@ nav a {
 }
 .ueber-mich
 {
-    background-color: var(--white);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -93,7 +103,7 @@ nav a {
 
 .techstack{
     padding:20rem;
-    background-color: var(--thirdcolor);
+    background-color: var(--firstcolor);
 
 }
 .techstack h2 {
@@ -105,7 +115,7 @@ nav a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     flex-direction: row;
     gap:4rem;
 }
@@ -113,9 +123,69 @@ nav a {
     background-color: var(--white);
     padding:7rem;
     text-align: center;
-    
+    transition: all .14s ease-out;
+      border: 1px solid var(--secondcolor);
+    border-radius: 0.4rem;
 }
 .skillcontainer img{
     max-width: 8vw;
     max-height: 8vh;
+}
+.mywork h2, .mywork p {
+    text-align: center;
+    
+}
+.projects {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 15rem;
+}
+.projects p {
+    text-align: left;
+}
+.projects div {
+    max-width: 40vw;
+}
+.projects2{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 15rem;
+    flex-direction: row-reverse;
+}
+.btn{
+    outline: 0;
+    grid-gap: 0.8rem;
+    align-items: center;
+    background-color: var(--secondcolor);
+    color: var(--white);
+    border: 1px solid var(--secondcolor);
+    border-radius: 0.4rem;
+    cursor: pointer;
+    display: inline-flex;
+    flex-shrink: 0;
+    font-size: 1.8rem;
+    gap: 0.8rem;
+    justify-content: center;
+    line-height: 1.5;
+    overflow: hidden;
+    padding: 1.2rem 1.6rem;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: all .14s ease-out;
+    white-space: nowrap;
+}.btn:hover {
+        box-shadow: 8px 8px 0 #000;
+        transform: translate(-8px,-8px);
+}
+
+.btn:focus-visible{
+        outline-offset: 1px;
+}
+.projects2 .btn:hover, .skillcontainer:hover{
+    box-shadow: -8px 8px 0 #000;
+    transform: translate(8px,-8px);  
 }

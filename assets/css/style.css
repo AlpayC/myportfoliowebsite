@@ -27,6 +27,7 @@ html{
     background-color: var(--white);
     font-size: 62.5%;
     font-family: poppinsr,Arial, Helvetica, sans-serif;
+    scroll-behavior:smooth;
 }
 header{
     min-height: 60vh;
@@ -36,7 +37,6 @@ a{
     text-decoration: none;
     font-size: 1.6rem;
 }
-
 
 
 h1{
@@ -64,6 +64,18 @@ p{
 section{
     margin: 10rem 0;
 }
+.logo img{
+    width: 70px;
+    height: 70px;
+
+}
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
 nav ul{
     display: flex;
     justify-content: space-evenly;
@@ -84,10 +96,10 @@ nav a {
     align-items: center;
 }
 .headertxt{
-    max-width: 50vw;
+    max-width: 30vw;
 }
 .headerimg{
-    max-width: 25vw;
+    max-width: 30vw;
     min-height: 44vh;
 }
 .ueber-mich
@@ -98,7 +110,7 @@ nav a {
     min-height: 60vh;
 }
 .uebermichtxt{
-    max-width: 50vw;
+    max-width: 30vw;
 }
 
 .techstack{
